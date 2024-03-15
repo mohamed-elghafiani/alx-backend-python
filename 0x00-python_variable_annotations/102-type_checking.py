@@ -7,13 +7,13 @@ def zoom_array(lst: Tuple, factor: int = 2) -> List:
     """Zoom array"""
     zoomed_in: List = [
         item for item in lst
-        for i in range(int(factor))
+        for _ in range(int(factor))
     ]
     return zoomed_in
 
 
 array: Tuple = (12, 72, 91)
 
-zoom_2x = zoom_array(array)
+zoom_2x: List = zoom_array(array)
 
-zoom_3x = zoom_array(array, 3.0)
+zoom_3x: List = zoom_array(array, 3.0)
